@@ -3,7 +3,7 @@ name: ML Run Chess
 on:
   push: # when a push is made to the main branch of the repository
     branches:
-      - master
+      - main
 jobs:
   ml_run_chess:
     runs-on: ubuntu-latest # runs the workflow on the latest ubuntu version
