@@ -1,11 +1,11 @@
-name: ML Run
+name: ML Run Chess
 # on mentions a trigger for the workflow
 on:
   push: # when a push is made to the main branch of the repository
     branches:
       - master
 jobs:
-  ml_run:
+  ml_run_chess:
     runs-on: ubuntu-latest # runs the workflow on the latest ubuntu version
     steps:
       - name: Checkout code
@@ -24,4 +24,4 @@ jobs:
           pip install -r requirements.txt
       - name: deploy
         run: |
-          python ml_example.py
+          python grandmaster_chess.py
